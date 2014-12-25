@@ -1,0 +1,23 @@
+caption {
+	text-align:left;
+	font-weight:normal;
+}
+
+a:hover, a:active {
+	color:#000;
+	text-decoration:none;
+}
+
+
+.theme-default #slider {
+    margin:5px auto 0 auto;
+    width:618px; /* Make sure your images are the same size */
+    height:246px; /* Make sure your images are the same size */
+   }
+
+/*====================*/
+/*=== Other Styles ===*/
+/*====================*/
+.clear {
+	clear:both;
+}

@@ -1,0 +1,146 @@
+@charset "UTF-8";
+/*
+	Background-Styles
+*/
+
+body {
+	margin:0px; padding:0px;
+	background-color:#131211;
+	font-family:"Times New Roman",Arial, Helvetica, sans-serif;
+	/*color:#7f7d78; /* all text color grey */
+	font-size:13px;
+	line-height:19px;
+}
+#main { /*silver color bg */
+	background:#c4c0be url(images/background_light_slice.jpg) repeat-x;
+	padding-bottom:30px;
+}
+#main .container {
+	background-image:url(images/background_light.jpg);
+	background-repeat:no-repeat;
+}
+#footer {
+	background-image:url(images/background_footer.jpg);
+	background-repeat:repeat-x;
+	padding:40px;
+	position:relative;
+	top:-20px;
+	min-height:130px;
+    color:#7f7d78;
+}
+.container {
+	width:1040px;
+	margin:0 auto;
+	position:relative;
+}
+
+
+/*
+	Header-Styles
+*/
+
+#header {
+	padding-top:20px;
+	padding-bottom:20px;
+}
+#logo h1, #logo small {
+	margin:0px;
+	display:block;
+	text-indent:-9999px;
+}
+ul#menu li a.active, ul#menu li a:hover {
+	color:#211e1e;
+}
+
+
+
+/*
+	Text-Styles
+*/
+
+h2 {
+	margin:0px 0px 10px 0px;
+	font-size:36px;
+	font-family:"Times New Roman",Helvetica, Arial, Sans-serif;
+	color:#000000;
+	line-height:39px;
+	letter-spacing:-1px;
+}
+h3 {
+	margin:10px 0px 5px 0px;
+	font-size:14px;
+	line-height:21px;
+	font-family:"Times New Roman",Helvetica, Arial, Sans-serif;
+	color:#000000;
+}
+h4 {
+	color:#007de2;
+	margin:0px 0px 0px 0px;
+}
+small {
+	color:#595856;
+	font-weight:bold;
+	font-size:11px;
+	display:block;
+	margin-bottom:15px;
+}
+a {
+	color:#26689f;
+	text-decoration:none;
+}
+small a {
+	color:#007de2;
+}
+
+/*
+	Footer-Styles
+*/
+
+#footer {
+	font-family:"Times New Roman",Verdana, Arial, Helvetica, sans-serif;
+	font-size:10px;
+}
+.footer_column {
+	float:left;
+	width:120px;
+	margin-right:30px;
+}
+#footer .long {
+	width:610px;
+}
+#footer h3 {
+	color:#e2dddc;
+	text-transform:uppercase;
+	font-size:10px;
+}
+.footer_column ul li, .footer_column ul {
+	list-style:none;
+	margin:0px;
+	padding:0px;
+}
+
+
+/*
+	Alternate Styles
+*/
+body#dark {
+	background-color:#1e1d1b;
+}
+body#dark #main {
+	background:#292826 url(images/background_dark_slice.jpg) repeat-x;
+}
+body#dark #main .container {
+	background-image:url(images/background_dark.jpg);
+}
+body#dark #footer {
+	background-image:url(images/background_dark_footer.jpg);
+}
+body#dark ul#menu li a.active, ul#menu li a:hover {
+	color:#ffffff;
+}
+body#dark .block, body#dark .mini_portfolio_item {
+	border-color:#1b1a19;
+}
+body#dark #text_column h2#text_title {
+	background-image:url(images/creatif_dark.jpg);
+}
