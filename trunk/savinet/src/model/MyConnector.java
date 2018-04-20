@@ -36,6 +36,25 @@ public class MyConnector {
         //return the new statement for use by other objects
         return conn;
     }
+    
+    public Connection connectAws() {
+   	 if (System.getProperty("RDS_HOSTNAME") != null) {
+   	 try {
+   	 Class.forName("com.mysql.jdbc.Driver");
+   	 String dbName = System.getProperty("RDS_DB_NAME");
+   	 String userName = System.getProperty("RDS_USERNAME");
+   	 String password = System.getProperty("RDS_PASSWORD");
+   	 String hostname = System.getProperty("RDS_HOSTNAME");
+   	 String port = System.getProperty("RDS_PORT");
+   	 String jdbcUrl = "jdbc:mysql://" + hostname + ":" + port + "/" + dbName + "?user=" + userName + "&password=" + password;
+   	 Connection con = DriverManager.getConnection(jdbcUrl);
+   	 return con;
+   	 }
+   	 catch (ClassNotFoundException e) { }
+   	 catch (SQLException e) { }
+   	 }
+   	 return null;
+   	 }
 
     public void disconnect(Statement stmt) {
         // close the statement and connection if they exist

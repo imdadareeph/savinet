@@ -29,7 +29,6 @@
 
         <thead>
             <%@include file="header_before.jsp"%>
-            <%@page import="java.util.HashMap,model.User,model.UserTable;" %>
             <%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
         </thead>
         <jsp:useBean id="user" class="model.User" scope="request"/>

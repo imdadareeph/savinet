@@ -25,7 +25,7 @@
                 <thead>
                     <%@include file="header_after.jsp"%>
                 </thead>
-                <%@page import="java.util.HashMap,model.Post,java.util.Vector,java.util.Iterator;" %>
+                <%@page import="model.Post;" %>
                 <%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 
 
